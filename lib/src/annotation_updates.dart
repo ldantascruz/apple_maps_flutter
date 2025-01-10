@@ -86,8 +86,7 @@ class _AnnotationUpdates {
   }
 
   @override
-  int get hashCode =>
-      hashValues(annotationsToAdd, annotationIdsToRemove, annotationsToChange);
+  int get hashCode => Object.hash(annotationsToAdd, annotationIdsToRemove, annotationsToChange);
 
   @override
   String toString() {

@@ -80,8 +80,7 @@ class _PolylineUpdates {
   }
 
   @override
-  int get hashCode =>
-      hashValues(polylinesToAdd, polylineIdsToRemove, polylinesToChange);
+  int get hashCode => Object.hash(polylinesToAdd, polylineIdsToRemove, polylinesToChange);
 
   @override
   String toString() {
